@@ -1,0 +1,100 @@
+body{
+    /* background-image:radial-gradient(rgb(255, 0, 115), rgb(0, 174, 255) , rgb(196, 238, 9)) ;
+    min-height: calc(100vh - 60px );  */
+    background-color: black;
+}
+.glow{
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: italic;
+    color:rgb(255, 255, 255);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+h1{
+    font-size: xx-large;
+}
+@keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d3e600, 0 0 40px #51e600, 0 0 50px #00e2e6, 0 0 60px #2e00e6, 0 0 70px #7300e6;
+      }
+      to {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d3e600, 0 0 40px #51e600, 0 0 50px #00e2e6, 0 0 60px #2e00e6, 0 0 70px #7300e6;
+    }
+    to {
+      text-shadow: 0 0 20px #ffffff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  @-moz-keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d3e600, 0 0 40px #51e600, 0 0 50px #00e2e6, 0 0 60px #2e00e6, 0 0 70px #7300e6;
+      }
+      to {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+  }
+
+  @-o-keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d3e600, 0 0 40px #51e600, 0 0 50px #00e2e6, 0 0 60px #2e00e6, 0 0 70px #7300e6;
+      }
+      to {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+  }
+#board{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.cell{
+    width:100px;
+    height:100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-weight: bolder;
+    /* background-image:radial-gradient(rgb(255, 0, 115), rgb(0, 174, 255) , rgb(196, 238, 9)) ; */
+    box-shadow: 0 0 10px 10px white;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.cell:hover{
+    opacity: 1.0;
+}
+  
+button{
+    font-size: 18px;
+    /* background-color: rgb(242, 4, 4); */
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px 10px;
+    /* background-image: linear-gradient(yellow,rgb(0, 213, 255)); */
+    position: relative;
+    left: 35px;
+}
+
+button:hover{
+    animation: glow 1s infinite alternate;
+}
